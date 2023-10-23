@@ -15,7 +15,7 @@ def file_Uploaded():
 
     col1, col2, col3 = st.columns(3, gap='small')
 
-    df = pd.read_excel(io=excel_File, engine='openpyxl', usecols='A,B,C')
+    df = pd.read_excel(io=excel_File, usecols='A,B,C')
 
     max_Val = df['Cost'].max()
     min_Val = df['Cost'].min()
